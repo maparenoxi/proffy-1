@@ -1,8 +1,12 @@
-import express from 'express';
+import express from 'express'; // Micro framework
+import routes from './routes';
 
 const app = express();
 
 app.use(express.json());
+app.use(routes);
+
+app.listen(3333);
 
 // Métodos HTTP: GET, POST, PUT, DELETE
 
@@ -11,9 +15,3 @@ app.use(express.json());
 
 // Query params: paginação, ordenação, filtros
 // request.query
-
-app.get('/', (request, response) => {
-    return response.json({ message: "Hello World" });
-});
-
-app.listen(3333);

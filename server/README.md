@@ -7,4 +7,4 @@
 ## Aulas
 - Rota: criação de aula (professor);
 - Rota: listagem de aulas (aluno);
-    - Query: filtrar por matéria, dia e horário;
+- Query: filtrar por matéria, dia e horário;
